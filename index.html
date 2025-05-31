@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Police Escape</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="game-title">🚔 Police Escape</h1>
+    <p class="tagline">
+        Outrun the law.
+        <span id="location-output">🌍</span>
+    </p>
+  </header>
+
+  <main class="auth-container">
+    <h1>Sign Up</h1>
+
+    <form id="signup-form">
+      <input type="text" id="signup-username" placeholder="Username" required>
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Password (min. 6 characters)" required minlength="6">
+      <input type="password" id="signup-password-verification" placeholder="Confirm password" required minlength="6">
+      <button type="submit">Register</button>
+    </form>
+
+    <p id="auth-message"></p>
+    <p>Already have an account? <a href="login.html">Log in</a></p>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/signup.js"></script>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Police Escape. All rights reserved.</p>
+    <nav>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Support</a>
+    </nav>
+    <p class="footer-fun">🚗💨 Pro tip: Don’t crash!</p>
+  </footer>
+</body>
+</html>

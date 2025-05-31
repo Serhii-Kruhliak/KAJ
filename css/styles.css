@@ -1,0 +1,204 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #82004c, #313899);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    background: rgba(30, 60, 114, 0.25);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    -webkit-animation: fadeInDown 1s ease;
+            animation: fadeInDown 1s ease;
+    z-index: 1000;
+  }
+  
+  .game-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd54f;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 5px;
+    font-style: italic;
+  }
+
+  .tagline span {
+    font-style: normal;
+    font-size: 1.2rem;
+  }
+  
+  .site-footer {
+    -webkit-animation: fadeInDown 1s ease;
+            animation: fadeInDown 1s ease;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    background: rgba(30, 60, 114, 0.1);
+    font-size: 0.9rem;
+    color: #ccc;
+    z-index: 1000;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .site-footer a {
+    color: #ffa034;
+    margin: 0 5px;
+  }
+  
+  .footer-fun {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+  
+  /* Animation */
+  @-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-25px);
+              transform: translateY(-25px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-25px);
+              transform: translateY(-25px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  
+  .auth-container {
+    -webkit-animation: fadeInDown 1s ease;
+            animation: fadeInDown 1s ease;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .site-header h1 {
+    margin-bottom: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    -webkit-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+  }
+  
+  input::placeholder {
+    color: #ddd;
+  }
+  
+  input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff9a00;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffb300;
+  }
+  
+  #auth-message {
+    margin-top: 5px;
+    font-size: 14px;
+    min-height: 20px;
+    color: #ffa034;
+  }
+  
+  a {
+    color: #ffd54f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 500px) {
+    .auth-container {
+      padding: 20px;
+    }
+  
+    input,
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
